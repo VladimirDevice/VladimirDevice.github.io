@@ -1,37 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <div id = "me"> </div>
-  <form name = "myform">
-  <div id = "my"></div>
-  <input type = "button" value = "push" onclik = "showform()">  
-  </form>
+  <head>
+  </head>
+  <body>
+    <h3>hi</h3>
+    <textarea id = "mytextarea"></textarea>
+    <input type = "button" onclick = "myfunction ()"></input>
+    <p id = "demo"></p>
   <script>
-    function my_object(product,unit_of_measure,prise) {
-      this.product = product;
-      this.unit_of_measure = unit_of_measure;
-      this.prise = prise;
-      }
-    var next_my_object = new my_object("хлеб","булка","20 рублей");
-    alert(next_my_object.prise);
-    
-    function showform() {
-      var data = "<input type = 'text' name = 'name'></input>";
-      //comment <br/><textarea row = "5" cols = "5"></textarea><br/><input type = "submit" value ="comment">';
-      document.getElementById("my").innerHTML = data;
-      }
-    
-    
-    
-   //
-    //document.write(document.getElementById("test").innerHTML + "</br>");
-    //
-    //document.getElementById("test").innerHTML = "hi";
-    //
-    //document.write(document.getElementById("test").innerHTML + "</br>");o
-    //
-    //document.getElementById("test").innerHTML = "next_my_object.product";
-    //
-    //document.write(document.getElementById("test").innerHTML);
-    
+    function myfunction(){
+      var x = document.getElementById("mytextarea").value;
+      document.getElementById("demo").innerHTML = x;
+    }
   </script>
+  </body>
 </html>
