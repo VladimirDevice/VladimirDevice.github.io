@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <div id = "test"> </div>
+  <div id = "my"> </div>
+  <form name = "myform">
+  <input type = "button" value = "push" onclik = "showform()">  
+    </form>
   <script>
     function my_object(product,unit_of_measure,prise) {
       this.product = product;
@@ -9,16 +12,22 @@
       }
     var next_my_object = new my_object("хлеб","булка","20 рублей");
     alert(next_my_object.prise);
+    function showform() {
+      var data = 'name <br/><input type = "text" name = "name"><br/>
+                  comment <br/><textarea row = "5" cols = "5"></textarea><br/>
+                   <input type = "submit" value ="comment">';
+               document.getElementById("my").innerHTML = data;
+      }
    //
-    document.write(document.getElementById("test").innerHTML + "</br>");
+    //document.write(document.getElementById("test").innerHTML + "</br>");
     //
-    document.getElementById("test").innerHTML = "hi";
+    //document.getElementById("test").innerHTML = "hi";
     //
-    document.write(document.getElementById("test").innerHTML + "</br>");
+    //document.write(document.getElementById("test").innerHTML + "</br>");
     //
-    document.getElementById("test").innerHTML = "next_my_object.product";
+    //document.getElementById("test").innerHTML = "next_my_object.product";
     //
-    document.write(document.getElementById("test").innerHTML);
+    //document.write(document.getElementById("test").innerHTML);
     
   </script>
 </html>
