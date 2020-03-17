@@ -4,7 +4,7 @@
   <form name = "myform">
   <div id = "my"></div>
   <input type = "button" value = "push" onclik = "showform()">  
-    </form>
+  </form>
   <script>
     function my_object(product,unit_of_measure,prise) {
       this.product = product;
@@ -13,11 +13,15 @@
       }
     var next_my_object = new my_object("хлеб","булка","20 рублей");
     alert(next_my_object.prise);
+    
     function showform() {
-      var data = 'name <br/><input type = "text" name = "name">'
+      /var data = "<input type = 'text' name = 'name'>"
       //comment <br/><textarea row = "5" cols = "5"></textarea><br/><input type = "submit" value ="comment">';
-               document.getElementById("my").innerHTML = data;
+      document.getElementById("my").innerHTML = data;
       }
+    
+    
+    
    //
     //document.write(document.getElementById("test").innerHTML + "</br>");
     //
