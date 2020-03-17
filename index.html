@@ -11,7 +11,8 @@
     function myfunction(){
       var x = document.getElementById("mytextarea").value;
       document.getElementById("demo").innerHTML += x + "<br/>";
-      document.getElementById("mytextarea").reload;
+      //document.getElementById("mytextarea").reload;
+      x.value = "";
     }
   </script>
   </body>
