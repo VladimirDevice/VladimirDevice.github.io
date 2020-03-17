@@ -3,11 +3,18 @@
   <head>
   </head>
   <body>
+    <p>номер товара</p><br/>
     <p>наименование товара</p><br/>
     <p id = "demo"></p>
     <textarea id = "mytextarea" border = "1"></textarea><br/>
     <input type = "button" onclick = "myfunction()" value = "подтвердите"></input>
   <script>
+    function shipment (number,product,unit,prise){
+      this.number = number;
+      this.profuct = product;
+      this.unit = unit;
+      this.prise = prise;
+      }
     function myfunction(){
       var x = document.getElementById("mytextarea").value;
       document.getElementById("demo").innerHTML += x + "<br/>";
